@@ -67,5 +67,51 @@
 
 # TUPLES, immutable, can not be changes or modified, can not add an item after you initially have defined/created it.
 # And use () curly brackets instead of square as in list.
-coordinates = (1, 2)
-print(coordinates[0])
+# coordinates = (1, 2)
+# print(coordinates[0])
+
+# Functions
+def say_hi(name, age):
+    print(f"Hi {name}, you are {age}")
+
+
+say_hi('Mike', 35)
+
+
+# return statement
+def cube(num):
+    return num * num * num
+
+
+result = cube(4)
+print(result)
+
+
+# IF statements
+is_adult = False
+is_female = True
+
+if is_adult or is_female:
+    print('You are an adult or a female')
+elif is_adult and is_female:
+    print('You are a women')
+elif is_adult and not is_female:
+    print('You are a men')
+elif not is_adult and is_female:
+    print('You are a girl')
+else:
+    print("You are a kid")
+
+
+# If statements and comparisons
+
+def max_num(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+
+
+print(max_num(12, 15, 10))
