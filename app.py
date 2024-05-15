@@ -19,4 +19,22 @@ print(floor(3.2))
 print(ceil(3.2))
 print(sqrt(144))
 
+# input
+# name = input("What is your name?")
+# age = input("How old are you?")
+# print("Hello " + name, " " + age)
+
+# calculator
+# num1 = input("enter a number")
+# num2 = input("enter another number")
+# result = float(num1) + float(num2)
+# print(result)
+
+# game
+color = input("your color: ")
+plural_noun = input("your plural noun: ")
+celeb = input("your fav celebrity: ")
+print(f"Roses are {color}")
+print(f"{plural_noun} are blue")
+print(f"I love {celeb}")
 
