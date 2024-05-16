@@ -88,30 +88,83 @@ print(result)
 
 
 # IF statements
-is_adult = False
-is_female = True
+# is_adult = False
+# is_female = True
+#
+# if is_adult or is_female:
+#     print('You are an adult or a female')
+# elif is_adult and is_female:
+#     print('You are a women')
+# elif is_adult and not is_female:
+#     print('You are a men')
+# elif not is_adult and is_female:
+#     print('You are a girl')
+# else:
+#     print("You are a kid")
+#
+#
+# # If statements and comparisons
+#
+# def max_num(num1, num2, num3):
+#     if num1 >= num2 and num1 >= num3:
+#         return num1
+#     elif num2 >= num1 and num2 >= num3:
+#         return num2
+#     else:
+#         return num3
+#
+#
+# print(max_num(12, 15, 10))
 
-if is_adult or is_female:
-    print('You are an adult or a female')
-elif is_adult and is_female:
-    print('You are a women')
-elif is_adult and not is_female:
-    print('You are a men')
-elif not is_adult and is_female:
-    print('You are a girl')
-else:
-    print("You are a kid")
+
+# Calculator exercise
+# first_number = float(input("Enter first number: "))
+# second_number = float(input("Enter second number: "))
+# operator = input("Enter the operator: ")
 
 
-# If statements and comparisons
+# if operator == '+':
+#     print(first_number + second_number)
+# elif operator == '-':
+#     print(first_number - second_number)
+# elif operator == '/':
+#     print(first_number / second_number)
+# elif operator == '*':
+#     print(first_number * second_number)
+# else:
+#     print('Invalid operator')
 
-def max_num(num1, num2, num3):
-    if num1 >= num2 and num1 >= num3:
-        return num1
-    elif num2 >= num1 and num2 >= num3:
-        return num2
-    else:
-        return num3
+# Dictionary. the keys might be a number and strings, but it must be unique
+
+month_conversions = {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December",
+}
+# 2 ways to access the values, first is by []
+print(month_conversions["Jan"])
+# second is get() method that allows us to set a default value
+print(month_conversions.get('Asd', 'Not a valid key'))
 
 
-print(max_num(12, 15, 10))
+
+
+
+
+
+
+
+
+
+
+
+
