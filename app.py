@@ -155,7 +155,35 @@ print(month_conversions["Jan"])
 # second is get() method that allows us to set a default value
 print(month_conversions.get('Asd', 'Not a valid key'))
 
+# While Loop
 
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+print('Done with looping')
+
+# guess game
+
+secret_word = "thanks"
+guess = ''
+guess_count = 0
+guess_limit = 3
+out_of_guesses = False
+
+
+while guess != secret_word and not out_of_guesses:
+    if guess_count < guess_limit:
+        guess = input('Your guess: ')
+        guess_count += 1
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print('Out of Guesses, You Lost!')
+else:
+    print('You got it right!')
 
 
 
