@@ -157,42 +157,58 @@ print(month_conversions.get('Asd', 'Not a valid key'))
 
 # While Loop
 
-i = 1
-while i <= 10:
-    print(i)
-    i += 1
-
-print('Done with looping')
+# i = 1
+# while i <= 10:
+#     print(i)
+#     i += 1
+#
+# print('Done with looping')
 
 # guess game
 
-secret_word = "thanks"
-guess = ''
-guess_count = 0
-guess_limit = 3
-out_of_guesses = False
+# secret_word = "thanks"
+# guess = ''
+# guess_count = 0
+# guess_limit = 3
+# out_of_guesses = False
+#
+#
+# while guess != secret_word and not out_of_guesses:
+#     if guess_count < guess_limit:
+#         guess = input('Your guess: ')
+#         guess_count += 1
+#     else:
+#         out_of_guesses = True
+#
+# if out_of_guesses:
+#     print('Out of Guesses, You Lost!')
+# else:
+#     print('You got it right!')
+#
+
+# For Loop
 
 
-while guess != secret_word and not out_of_guesses:
-    if guess_count < guess_limit:
-        guess = input('Your guess: ')
-        guess_count += 1
-    else:
-        out_of_guesses = True
-
-if out_of_guesses:
-    print('Out of Guesses, You Lost!')
-else:
-    print('You got it right!')
+for letter in "Hello World":
+    print(letter)
 
 
+# OR
 
+my_list = [1, 2, 3, 4, 5]
 
+total = 0
 
+for number in my_list:
+    total += number
+print(total)
 
+for index in range(5, 10):
+    print(index)
 
+colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink"]
 
-
-
+for index in range(len(colors)):
+    print(colors[index])
 
 
