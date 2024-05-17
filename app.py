@@ -86,7 +86,6 @@ def cube(num):
 result = cube(4)
 print(result)
 
-
 # IF statements
 # is_adult = False
 # is_female = True
@@ -192,7 +191,6 @@ print(month_conversions.get('Asd', 'Not a valid key'))
 for letter in "Hello World":
     print(letter)
 
-
 # OR
 
 my_list = [1, 2, 3, 4, 5]
@@ -212,3 +210,12 @@ for index in range(len(colors)):
     print(colors[index])
 
 
+# practice
+def raise_to_power(base_number, pow_number):
+    result_pow = 1
+    for i in range(pow_number):
+        result_pow = result_pow * base_number
+    return result_pow
+
+
+print(raise_to_power(2, 4))
