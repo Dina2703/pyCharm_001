@@ -1,0 +1,10 @@
+"Invisibility and Shadow Manipulation",
+    "Lunar Magic and Healing",
+    "Weather Control and Flight",
+    "Fire Manipulation and Swordsmanship",
+    "Water Control and Summoning",
+    "Earth Manipulation and Strength",
+    "Cosmic Archery and Agility",
+    "Electricity Manipulation and Stealth",
+    "Crystal Shielding and Defense",
+    "Illusion Creation and Agility"

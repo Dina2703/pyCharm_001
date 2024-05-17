@@ -220,35 +220,62 @@
 #
 # print(raise_to_power(2, 4))
 
-number_grid = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-
-print(number_grid[1][0])
-# use nested for loop
-
-for row in number_grid:
-    for index in row:
-        print(index)
-
+# number_grid = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+#
+# print(number_grid[1][0])
+# # use nested for loop
+#
+# for row in number_grid:
+#     for index in row:
+#         print(index)
+#
 
 # practice translator
 
-def translator(word, magic_letter):
-    translation = ''
-    for letter in word:
-        if letter.lower() in 'aeiou':
-            if letter.isupper():
-                translation = translation + magic_letter.upper()
-            else:
-                translation = translation + magic_letter.lower()
-        else:
-            translation = translation + letter
-    return translation
+# def translator(word, magic_letter):
+#     translation = ''
+#     for letter in word:
+#         if letter.lower() in 'aeiou':
+#             if letter.isupper():
+#                 translation = translation + magic_letter.upper()
+#             else:
+#                 translation = translation + magic_letter.lower()
+#         else:
+#             translation = translation + letter
+#     return translation
+#
+#
+# print(translator('hello', 'ee'))
+# # with input from a user
+# print(translator(input('Enter a phrase: '), input('Enter a magic_letter: ')))
+
+# Try / Expect
+#
+# try:
+#     # value = 10/0
+#     number = int(input('Enter your number: '))
+#     print(number + 2)
+# # except ZeroDivisionError:
+# #     print('Division by Zero')
+# except ValueError:
+#     print('Invalid number')
 
 
-print(translator('hello', 'ee'))
-# with input from a user
-print(translator(input('Enter a phrase: '), input('Enter a magic_letter: ')))
+# READing Files, r- read, w-write, a- append(only add), r+  - to read and write
+
+random_data = open('test.txt', 'r')
+# print(random_data.readable())
+# print(random_data.readline())
+# print(random_data.readline())
+#
+# print(random_data.readlines()[3])
+
+for name in random_data.readlines():
+    print(name)
+
+
+random_data.close()
