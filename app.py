@@ -265,17 +265,19 @@
 #     print('Invalid number')
 
 
-# READing Files, r- read, w-write, a- append(only add), r+  - to read and write
+# READing Files, r- read, w-write(over-write to an existing file), a- append(only add), r+  - to read and write
 
-random_data = open('test.txt', 'r')
+random_data = open('test1.txt', 'w')
 # print(random_data.readable())
 # print(random_data.readline())
 # print(random_data.readline())
 #
 # print(random_data.readlines()[3])
 
-for name in random_data.readlines():
-    print(name)
+# for name in random_data.readlines():
+#     print(name)
+
+print(random_data.write('\nTest'))
 
 
 random_data.close()

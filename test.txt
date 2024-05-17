@@ -1,4 +1,5 @@
-"Invisibility and Shadow Manipulation",
+
+ "Invisibility and Shadow Manipulation",
     "Lunar Magic and Healing",
     "Weather Control and Flight",
     "Fire Manipulation and Swordsmanship",
