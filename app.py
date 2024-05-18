@@ -277,13 +277,60 @@ random_data = open('test1.txt', 'w')
 # for name in random_data.readlines():
 #     print(name)
 
-print(random_data.write('\nTest'))
-
-
-random_data.close()
+# print(random_data.write('\nTest'))
+#
+#
+# random_data.close()
 
 # Classes and Objects
-from Student import Student
+# from Student import Student
+#
+# student1 = Student('Sam', 23, 4.2, 'student')
+# print(student1.name)
 
-student1 = Student('Sam', 23, 4.2, 'student')
-print(student1.name)
+# Practice Class and Object
+
+
+from Question import Question
+
+question_prompts = [
+    {
+        "question": "What is the capital of France?",
+        "options": ["a) Berlin", "b) Madrid", "c) Paris"]
+    },
+    {
+        "question": "Which element has the chemical symbol 'O'?",
+        "options": ["a) Gold", "b) Oxygen", "c) Silver"]
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["a) Mars", "b) Venus", "c) Jupiter"]
+    },
+    {
+        "question": "Who wrote the play 'Romeo and Juliet'?",
+        "options": ["a) William Shakespeare", "b) Charles Dickens", "c) J.K. Rowling"]
+    }
+]
+
+
+
+
+questions = [
+    Question(question_prompts[0]["question"], 'Paris'),
+    Question(question_prompts[1]["question"], 'Oxygen'),
+    Question(question_prompts[2]["question"], 'Mars'),
+    Question(question_prompts[3]["question"], 'William Shakespeare'),
+]
+
+
+def run_test(questions):
+    score = 0
+    for question in questions:
+        answer = input(question.prompt).lower()
+        if answer == question.answer.lower():
+            score += 1
+    print("You got " + str(score) + "/" + str(len(questions)) + ' correct')
+
+
+run_test(questions)
+
