@@ -281,3 +281,9 @@ print(random_data.write('\nTest'))
 
 
 random_data.close()
+
+# Classes and Objects
+from Student import Student
+
+student1 = Student('Sam', 23, 4.2, 'student')
+print(student1.name)
